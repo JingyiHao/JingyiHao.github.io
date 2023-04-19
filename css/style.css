@@ -16,12 +16,26 @@ header {
     background-color: #3d3f4c;
     color: white;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 2rem;
 }
-
+.introduction{
+    background-color: #3d3f4c;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.introduction h1{
+    margin: 0;
+}
+.introduction p{
+    margin: 0;
+    text-align: left;
+    padding: 2rem;
+}
 main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+    color: #333;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     grid-gap: 2rem;
     padding: 2rem;
 }
@@ -49,6 +63,7 @@ main {
 
 .category p {
     max-width: 60ch;
+    white-space: pre-line;
 }
 
 /* Link styles */
@@ -64,7 +79,7 @@ a:active {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 550px) {
     main {
         grid-template-columns: 1fr;
     }
